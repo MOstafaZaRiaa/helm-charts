@@ -1,6 +1,6 @@
 apiVersion: v1
 name: fluent-bit
-description: Fast and lightweight log processor and forwarder or Linux, OSX and BSD family operating systems.
+description: Fast and lightweight log processor and forwarder for Linux, OSX, and BSD family operating systems.
 keywords:
   - logging
   - fluent-bit
@@ -23,4 +23,10 @@ maintainers:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: "Updated Fluent Bit OCI image to v3.1.10"
+      description: "Updated Fluent Bit OCI image to v3.1.10 from Docker Hub"
+
+values:
+  image:
+    repository: docker.io/fluent/fluent-bit
+    tag: 3.1.10
+    pullPolicy: IfNotPresent
