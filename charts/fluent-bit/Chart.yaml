@@ -27,6 +27,6 @@ annotations:
 
 values:
   image:
-    repository: docker.io/fluent/fluent-bit
+    repository: fluent/fluent-bit
     tag: 3.1.10
     pullPolicy: IfNotPresent
